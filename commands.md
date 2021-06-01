@@ -15,3 +15,18 @@ sudo update-alternatives --config java
 Install deb
 sudo apt install -f /debfilepath.deb 
 -f for install dependencies
+
+
+Git
+Adding executable permission
+git update-index --skip-worktree --chmod=+x foo.sh
+
+
+Git projects running tasks
+include 'projA'
+include 'projB'
+include 'other/projC'
+include 'other/projD'
+
+gradle projA:helloTask
+gradle :other/projC:hello
